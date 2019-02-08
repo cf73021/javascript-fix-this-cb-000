@@ -74,7 +74,6 @@ function makeDessert() {
   } else {
     makePie.call(this.parentNode)
   }
-  }
 }
 
 function serve(message, customer) {
