@@ -33,7 +33,7 @@ function makePie() {
   var updatePieStatus = updateStatus.bind(this);
   updatePieStatus("Prep")
   pie.decorate = cake.decorate.bind(pie);
-  mix.call(pie, updatePieStatus)
+  mix.call(pie, updatePieStatus);
 }
 
 function updateStatus(statusText) {
