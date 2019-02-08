@@ -42,7 +42,7 @@ function updateStatus(statusText) {
 
 function bake(updateFunction) {
   var status = "Baking at " + this.bakeTemp + " for " + this.bakeTime
-  setTimeout(function() {
+  setTimeout(() => {
     cool(updateFunction)
   }, 2000)
 }
