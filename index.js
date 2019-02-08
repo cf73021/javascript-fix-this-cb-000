@@ -52,7 +52,7 @@ function bake(updateFunction) {
 function mix(updateFunction) {
   var status = "Mixing " + this.ingredients.join(", ")
   updateFunction(status)
-  setTimeout(function() {
+  setTimeout(() => {
     bake(updateFunction)
   }, 2000)
 
