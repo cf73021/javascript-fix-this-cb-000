@@ -32,6 +32,7 @@ function makeCake() {
 function makePie() {
   var updatePieStatus = updateStatus.bind(this);
   updatePieStatus("Prep")
+  pie.decorate = cake.decorate.bind(pie);
 }
 
 function updateStatus(statusText) {
